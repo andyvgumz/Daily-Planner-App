@@ -21,7 +21,7 @@ $(document).ready(function () {
     })
 
     function hourUpdate() {
-        let currentHour = dayj(format).hourUpdate();
+        let currentHour = dayjs().format();
         // console.log($(".time-block"));
 
 
@@ -69,8 +69,8 @@ $(document).ready(function () {
 
 
 
-    $("#currentDay").text(dayjs().format("dd, D, MMM, YY"))
+    $("#currentDay").text(dayjs().format("ddd, D, MMM, YYYY"));
 
 
- 
+
 })
